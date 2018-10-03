@@ -8,7 +8,6 @@
   "scripts": {
     "test": "node test",
     "docs": "node build-scripts/docs && jsdoc config/* README.md -t node_modules/docdash -d ./docs -u ./tutorials && node build-scripts/docs.after",
-    "prepublishOnly": "npm run test && npm run docs",
     "prepack": "npm run test && npm run docs"
   },
   "peerDependencies": {
