@@ -1,14 +1,10 @@
+"use strict";
+
 const { exec } = require("child_process");
 
 const ERROR_CODE = 1;
 
-const x = () => 1;
-const y = {};
-const a = {
-    ... y,
-};
-
-exec("./node_modules/.bin/eslint -c .eslintrc.json config/*.js test/*.js", (error, stdout, stderr) => {
+exec("./node_modules/.bin/eslint -c test/.eslintrc.test.json config/*.js test/*.js", (error, stdout, stderr) => {
     if (!error) {
         console.info("OK");
         return;
@@ -17,5 +13,5 @@ exec("./node_modules/.bin/eslint -c .eslintrc.json config/*.js test/*.js", (erro
     console.error("");
     console.error("Error message:");
     console.error(stderr || stdout);
-    process.exit(ERROR_CODE);
+    process.exit(ERROR_CODE); // eslint-disable-line no-process-exit
 });

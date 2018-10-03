@@ -1,3 +1,7 @@
+/* eslint-disable max-lines, no-magic-numbers */
+
+"use strict";
+
 const ERROR = "error";
 const WARN = "WARN";
 const OFF = "off";
@@ -11,7 +15,8 @@ module.exports = {
         "no-await-in-loop": OFF,
         "no-compare-neg-zero": ERROR,
         "no-cond-assign": [ERROR, "except-parens"],
-        "no-console": [ERROR, { allow: ["error", "info", "warn"] }], // should allow logging while disallowing debug stuff
+        // should allow logging while disallowing debug stuff:
+        "no-console": [ERROR, { allow: ["error", "info", "warn"] }],
         "no-constant-condition": [ERROR, { checkLoops: true }],
         "no-control-regex": OFF,
         "no-debugger": ERROR,
@@ -26,7 +31,7 @@ module.exports = {
         "no-extra-semi": ERROR,
         "no-func-assign": ERROR,
         "no-inner-declarations": [ERROR, "both"],
-        "no-invalid-regexp": [ERROR, { "allowConstructorFlags": [] }],
+        "no-invalid-regexp": [ERROR, { allowConstructorFlags: [] }],
         "no-irregular-whitespace": [ERROR, {
             skipStrings: true,
             skipComments: false,
@@ -160,7 +165,7 @@ module.exports = {
         "wrap-iife": [ERROR, "inside", {
             functionPrototypeMethods: true,
         }],
-        "yoda": [ERROR, "never", ],
+        "yoda": [ERROR, "never"],
 
         // Strict mode
         "strict": [ERROR, "safe"],
@@ -284,7 +289,7 @@ module.exports = {
             skipComments: true,
         }],
         "max-lines-per-function": [ERROR, {
-            max: 5,
+            max: 50,
             skipBlankLines: true, // these on 03.10.2018 are documented wrong @TODO suggest a fix
             skipComments: true,
             IIFEs: false,
@@ -344,7 +349,7 @@ module.exports = {
         "one-var": [ERROR, {
             var: "consecutive",
             let: "consecutive",
-            const: "always",
+            const: "never",
         }],
         "one-var-declaration-per-line": OFF,
         "operator-assignment": OFF,
