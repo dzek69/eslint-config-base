@@ -27,7 +27,12 @@ Put `.eslintrc.json` in your root directory and fill it with:
 }
 ```
 
-Set your other config, like `env`, see [eslint config guide](https://eslint.org/docs/user-guide/configuring).
+Make sure to set your other config, like `env`, see [eslint config guide](https://eslint.org/docs/user-guide/configuring).
+
+Then to lint `src` and `test` directories with subdirectories run:
+```
+npx eslint src/**/*.js src/*.js test/**/*.js test/*.js
+```
 
 ## Test files issues
 
