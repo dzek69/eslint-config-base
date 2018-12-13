@@ -171,7 +171,7 @@ module.exports = {
         "strict": [ERROR, "safe"],
 
         // Variables
-        "init-declarations": [ERROR, "never", { ignoreForLoopInit: true }],
+        "init-declarations": OFF,
         "no-delete-var": ERROR,
         "no-label-var": ERROR,
         "no-restricted-globals": OFF, // @TODO we can use this to prevent fdescribe or stuff, verify

@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [UNRELEASED]
 (nothing yet)
 
+## [0.0.2] - 2018-12-13
+### Changed
+- `init-declarations` rule is now disabled
+
 ## [0.0.1] - 2018-10-03
 ### Added
 - first version
