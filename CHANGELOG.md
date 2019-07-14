@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [UNRELEASED]
 (nothing yet)
 
+## [1.0.0] - 2019-07-14
+### Added
+- `no-useless-catch` rule
+- unneeded new rules in disabled state into config file
+### Changed
+- `eslint` (peer)dependency upgraded into newest version (this is breaking change for some rules)
+
 ## [0.0.3] - 2018-12-13
 ### Changed
 - yarn lockfile cleaned up

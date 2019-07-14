@@ -76,7 +76,11 @@ This is full config that I am using in one of my projects, feel free to take ins
         "mocha": true
       },
       "rules": {
-        "max-lines": "off"
+        "global-require": "off",
+        "max-lines": "off",
+        "max-lines-per-function": "off",
+        "max-statements": "off",
+        "no-magic-numbers": "off"
       }
     }
   ]
