@@ -248,6 +248,7 @@ const stylistic = {
     "func-name-matching": OFF,
     "func-names": [ERROR, "as-needed"],
     "func-style": [ERROR, "expression"],
+    "function-call-argument-newline": OFF, // Maybe enable later?
     "function-paren-newline": OFF, // Can't be linted like I'd want
     "id-blacklist": OFF,
     "id-length": OFF,

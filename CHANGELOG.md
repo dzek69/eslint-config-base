@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [UNRELEASED]
 (nothing yet)
 
+## [1.1.0] - 2019-08-30
+### Added
+- new `function-call-argument-newline` rule, but disabled
+### Changed
+- upgraded minimal eslint version
+### Fixed
+- more audit issues with dev dependencies
+
 ## [1.0.1] - 2019-07-14 - not released to npm
 ### Fixed
 - security issue with dev dependency by upgrading jsdoc

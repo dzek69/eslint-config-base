@@ -1,6 +1,6 @@
 {
   "name": "@dzek69/eslint-config-base",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": ".eslintrc.json",
   "repository": "https://github.com/dzek69/eslint-config-base.git",
   "author": "Jacek Nowacki @dzek69 <git-public@dzek.eu>",
@@ -11,14 +11,12 @@
     "prepack": "npm run test && npm run docs"
   },
   "peerDependencies": {
-    "eslint": "^6.0.1"
+    "eslint": "^6.2.2"
   },
   "devDependencies": {
-    "docdash": "^1.0.0",
-    "eslint": "^6.0.1",
-    "fs-extra": "^7.0.0",
-    "jsdoc": "^3.6.2",
-    "mocha": "^4.0.1",
-    "must": "^0.13.4"
+    "docdash": "^1.1.1",
+    "eslint": "^6.2.2",
+    "fs-extra": "^7.0.1",
+    "jsdoc": "^3.6.3"
   }
 }
