@@ -7,4 +7,5 @@ module.exports = {
     parserOptions: {
         ecmaVersion: 9, // 2018, first one that recognizes object rest spread
     },
+    reportUnusedDisableDirectives: true,
 };

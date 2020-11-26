@@ -6,6 +6,36 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [UNRELEASED]
 (nothing yet)
 
+## [2.0.0] - 2020-11-26
+### Added
+- `reportUnusedDisableDirectives` config option
+- `no-dupe-else-if` rule
+- `no-import-assign` rule
+- `no-loss-of-precision` rule
+- `no-promise-executor-return` rule
+- `no-setter-return` rule
+- `no-unreachable-loop` rule
+- `no-useless-backreference` rule
+- `default-case-last` rule
+- `default-param-last` rule
+- `grouped-accessor-pairs` rule
+- `no-constructor-return` rule
+- `no-nonoctal-decimal-escape` rule
+- `prefer-regex-literals` rule
+- `prefer-exponentiation-operator` rule (disabled)
+- `no-restricted-exports` rule (disabled)
+### Changed
+- upgraded minimal eslint version
+- `no-extra-boolean-cast` tweaks
+- `no-unsafe-negation` tweaks
+- `use-isnan` tweaks
+- `no-implicit-globals` tweaks
+- `no-magic-numbers` tweaks
+- `no-void` tweaks
+- `camelcase` tweaks
+- `computed-property-spacing` tweaks
+- `no-useless-computed-key` tweaks
+
 ## [1.1.0] - 2019-08-30
 ### Added
 - new `function-call-argument-newline` rule, but disabled

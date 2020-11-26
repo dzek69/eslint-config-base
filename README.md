@@ -87,6 +87,12 @@ This is full config that I am using in one of my projects, feel free to take ins
 }
 ```
 
+## Suggested CLI config
+
+Add:
+- `--no-error-on-unmatched-pattern` - to prevent errors while you start working on your lib and not all patterns matches
+yet
+
 ## License
 
 MIT
