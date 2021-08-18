@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [UNRELEASED]
 (nothing yet)
 
+## [2.1.0] - 2021-08-18
+### Added
+- `no-unsafe-optional-chaining` rule
+### Changed
+- `no-implicit-coercion` explicitly set default config value
+- `no-sequences` are allowed in parentheses
+- `no-unused-expressions` now works with JSX
+### Dev
+- deps upgrade, removed jsdoc
+
 ## [2.0.0] - 2020-11-26
 ### Added
 - `reportUnusedDisableDirectives` config option

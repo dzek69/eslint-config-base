@@ -52,6 +52,7 @@ const possibleErrors = {
     "no-unreachable-loop": ERROR,
     "no-unsafe-finally": ERROR,
     "no-unsafe-negation": [ERROR, { enforceForOrderingRelations: true }],
+    "no-unsafe-optional-chaining": [ERROR, { disallowArithmeticOperators: true }],
     "no-useless-backreference": WARN,
     "require-atomic-updates": ERROR,
     "use-isnan": [ERROR, {
@@ -116,7 +117,11 @@ const bestPractices = {
     "no-fallthrough": WARN,
     "no-floating-decimal": ERROR,
     "no-global-assign": [ERROR, { exceptions: [] }],
-    "no-implicit-coercion": [ERROR, { boolean: true, string: true, number: true, allow: [] }],
+    "no-implicit-coercion": [
+        // @TODO should disallowTemplateShorthand be true? one of ts rules asks for template strings instead of adding
+        // things
+        ERROR, { boolean: true, string: true, number: true, disallowTemplateShorthand: false, allow: [] },
+    ],
     "no-implicit-globals": [ERROR, { lexicalBindings: false }], // @TODO something about making it true in README?
     "no-implied-eval": ERROR,
     "no-invalid-this": ERROR,
@@ -157,13 +162,14 @@ const bestPractices = {
     "no-script-url": OFF,
     "no-self-assign": [ERROR, { props: true }],
     "no-self-compare": ERROR,
-    "no-sequences": WARN,
+    "no-sequences": [WARN, { allowInParentheses: true }],
     "no-throw-literal": ERROR,
     "no-unmodified-loop-condition": ERROR,
     "no-unused-expressions": [ERROR, {
         allowShortCircuit: true,
         allowTernary: false,
         allowTaggedTemplates: false,
+        enforceForJSX: true,
     }],
     "no-unused-labels": ERROR, // @TODO put on a list to disable in tests
     "no-useless-call": OFF,
