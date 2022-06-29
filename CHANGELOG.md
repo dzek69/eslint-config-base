@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [UNRELEASED]
 (nothing yet)
 
+## [2.1.1] - 2022-06-29
+### Changed
+- `spaced-comment` rule to accept `///` (useful for TS and more) and force space before closing block comment `*/`
+
 ## [2.1.0] - 2021-08-18
 ### Added
 - `no-unsafe-optional-chaining` rule

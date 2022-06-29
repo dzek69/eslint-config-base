@@ -431,7 +431,10 @@ const stylistic = {
     }],
     "spaced-comment": [ERROR, "always", {
         // exceptions: [],
-        // markers: [],
+        block: {
+            balanced: true,
+        },
+        markers: ["/"],
     }],
     "switch-colon-spacing": [ERROR, {
         before: false,
