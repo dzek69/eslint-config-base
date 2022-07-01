@@ -16,6 +16,7 @@ const possibleErrors = {
     // should allow logging while disallowing debug stuff:
     "no-console": [ERROR, { allow: ["error", "info", "warn"] }],
     "no-constant-condition": [ERROR, { checkLoops: true }],
+    "no-constant-binary-expression": ERROR,
     "no-control-regex": OFF,
     "no-debugger": ERROR,
     "no-dupe-args": ERROR,
@@ -53,8 +54,11 @@ const possibleErrors = {
     "no-unsafe-finally": ERROR,
     "no-unsafe-negation": [ERROR, { enforceForOrderingRelations: true }],
     "no-unsafe-optional-chaining": [ERROR, { disallowArithmeticOperators: true }],
+    "no-unused-private-class-members": ERROR,
     "no-useless-backreference": WARN,
-    "require-atomic-updates": ERROR,
+    "require-atomic-updates": [ERROR, {
+        allowProperties: false,
+    }],
     "use-isnan": [ERROR, {
         enforceForSwitchCase: true,
         enforceForIndexOf: true,
@@ -209,6 +213,8 @@ const variables = {
     "no-shadow": [ERROR, {
         builtinGlobals: true,
         hoist: "all",
+        ignoreOnInitialization: true,
+        allow: [],
     }],
     "no-shadow-restricted-names": ERROR,
     "no-undef": [ERROR, { typeof: false }],
@@ -222,11 +228,13 @@ const variables = {
         caughtErrors: "all", // can omit `(error)` instead
         caughtErrorsIgnorePattern: undefined,
         ignoreRestSiblings: true,
+        destructuredArrayIgnorePattern: "^_",
     }],
     "no-use-before-define": [WARN, {
         functions: true,
         classes: true,
         variables: true,
+        allowNamedExports: false,
     }],
 };
 
@@ -396,6 +404,7 @@ const stylistic = {
     "padded-blocks": [ERROR, "never"],
     "padding-line-between-statements": OFF, // @TODO would be nice to have this configured
     "prefer-exponentiation-operator": OFF,
+    "prefer-object-has-own": OFF, // @TODO enable around 2025
     "prefer-object-spread": ERROR,
     "quote-props": [ERROR, "consistent-as-needed", {
         keywords: false,
@@ -458,6 +467,7 @@ const stylistic = {
     "no-class-assign": ERROR,
     "no-confusing-arrow": [ERROR, {
         allowParens: true,
+        onlyOneSimpleParam: false,
     }],
     "no-const-assign": ERROR,
     "no-dupe-class-members": ERROR,
@@ -470,7 +480,11 @@ const stylistic = {
     "no-this-before-super": ERROR,
     "no-useless-computed-key": [ERROR, { enforceForClassMembers: true }],
     "no-useless-constructor": ERROR,
-    "no-useless-rename": ERROR,
+    "no-useless-rename": [ERROR, {
+        ignoreImport: false,
+        ignoreExport: false,
+        ignoreDestructuring: false,
+    }],
     "no-var": ERROR,
     "object-shorthand": [ERROR, "consistent-as-needed"],
     "prefer-arrow-callback": OFF,

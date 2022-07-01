@@ -6,6 +6,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [UNRELEASED]
 (nothing yet)
 
+## [2.2.0] - 2022-07-01
+### Added
+- `no-constant-binary-expression` rule
+- `no-unused-private-class-members` rule
+- `prefer-object-has-own` disabled rule
+### Changed
+- `require-atomic-updates` add an explicit new option to disallow properties update
+- `no-unused-vars` ignore `_` prefixed names when destructuring array
+- `no-shadow` reconfigured with new options
+- `no-use-before-define` explicitly configured with new options
+- `no-confusing-arrow` explicitly configured with new options
+- `no-useless-rename` explicitly configured with new options
+### Dev
+- bump eslint version
+
 ## [2.1.1] - 2022-06-29
 ### Changed
 - `spaced-comment` rule to accept `///` (useful for TS and more) and force space before closing block comment `*/`
