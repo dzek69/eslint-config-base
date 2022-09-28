@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [UNRELEASED]
 (nothing yet)
 
+## [2.3.0] - 2022-09-28
+### Added
+- `logical-assignment-operators` rule
+
 ## [2.2.0] - 2022-07-01
 ### Added
 - `no-constant-binary-expression` rule

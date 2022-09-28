@@ -104,6 +104,7 @@ const bestPractices = {
     "eqeqeq": [ERROR, "always", { null: "ignore" }],
     "grouped-accessor-pairs": [ERROR, "getBeforeSet"],
     "guard-for-in": WARN,
+    "logical-assignment-operators": [ERROR, "never"],
     "max-classes-per-file": OFF,
     "no-alert": OFF,
     "no-caller": ERROR,

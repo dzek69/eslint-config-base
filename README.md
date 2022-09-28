@@ -1,6 +1,6 @@
 # eslint-config-base
 
-This is my preferred code style linting rules. You'll probably hate them.
+These are my preferred code style linting rules. You'll probably hate them.
 
 ## Idea behind these
 
