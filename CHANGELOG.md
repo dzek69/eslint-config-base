@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [UNRELEASED]
 (nothing yet)
 
+## [2.4.0] - 2023-04-14
+### Added
+- `no-empty-static-block` rule
+- `no-new-native-nonconstructor` rule
+### Removed
+- `no-new-symbol` rule (replaced by `no-new-native-nonconstructor`)
+### Changed
+- `key-spacing` explicit config
+
 ## [2.3.0] - 2022-09-28
 ### Added
 - `logical-assignment-operators` rule

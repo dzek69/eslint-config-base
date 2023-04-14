@@ -114,6 +114,7 @@ const bestPractices = {
     "no-else-return": [ERROR, { allowElseIf: false }],
     "no-empty-function": [ERROR, { allow: [] }],
     "no-empty-pattern": ERROR,
+    "no-empty-static-block": ERROR,
     "no-eq-null": OFF, // eqeqeq takes care of that anyway
     "no-eval": [ERROR, { allowIndirect: false }],
     "no-extend-native": [ERROR, { exceptions: [] }],
@@ -138,6 +139,7 @@ const bestPractices = {
         ignore: [0, 1],
         ignoreArrayIndexes: true,
         ignoreDefaultValues: false,
+        ignoreClassFieldInitialValues: false,
         enforceConst: false,
         detectObjects: false,
     }],
@@ -306,6 +308,7 @@ const stylistic = {
         afterColon: true,
         mode: "strict",
         align: undefined,
+        multiLine: undefined,
     }],
     "keyword-spacing": [ERROR, {
         before: true,
@@ -475,7 +478,8 @@ const stylistic = {
     "no-duplicate-imports": [ERROR, {
         includeExports: true,
     }],
-    "no-new-symbol": ERROR,
+    "no-new-symbol": OFF,
+    "no-new-native-nonconstructor": ERROR,
     "no-restricted-imports": OFF,
     "no-restricted-exports": OFF,
     "no-this-before-super": ERROR,
