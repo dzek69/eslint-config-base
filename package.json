@@ -1,19 +1,18 @@
 {
   "name": "@dzek69/eslint-config-base",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "main": ".eslintrc.json",
   "repository": "https://github.com/dzek69/eslint-config-base.git",
   "author": "Jacek Nowacki @dzek69 <git-public@dzek.eu>",
   "license": "MIT",
   "scripts": {
     "test": "node test",
-    "prepack": "npm run test"
+    "prepack": "pnpm test"
   },
   "peerDependencies": {
-    "eslint": "^8.38.0"
+    "eslint": "^8.43.0"
   },
   "devDependencies": {
-    "eslint": "^8.38.0",
-    "fs-extra": "^11.1.1"
+    "eslint": "^8.43.0"
   }
 }

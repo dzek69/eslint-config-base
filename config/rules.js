@@ -38,6 +38,7 @@ const possibleErrors = {
         skipComments: false,
         skipRegExps: true,
         skipTemplates: true,
+        skipJSXText: false,
     }],
     "no-loss-of-precision": ERROR,
     "no-misleading-character-class": ERROR,
@@ -324,7 +325,7 @@ const stylistic = {
     "max-len": [ERROR, {
         code: 120,
         tabWidth: 4,
-        comments: 120,
+        comments: 1000,
         ignorePattern: undefined,
         ignoreComments: false,
         ignoreTrailingComments: false,
@@ -419,6 +420,7 @@ const stylistic = {
     "require-jsdoc": OFF, // not required, but must be valid, because of valid-jsdoc
     "semi": [ERROR, "always", {
         omitLastInOneLineBlock: false,
+        omitLastInOneLineClassBody: false,
     }],
     "semi-spacing": [ERROR, {
         before: false,

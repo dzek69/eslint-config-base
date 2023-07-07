@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [UNRELEASED]
 (nothing yet)
 
+## [2.5.0] - 2023-07-07
+### Changed
+- `no-irregular-whitespace` - disallow in JSX text
+- `max-len` - allow long trailing comments
+- `semi` - explicit config of new `omitLastInOneLineClassBody` option
+
 ## [2.4.0] - 2023-04-14
 ### Added
 - `no-empty-static-block` rule
